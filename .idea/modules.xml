@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/ChongHyukWon.iml" filepath="$PROJECT_DIR$/ChongHyukWon.iml" />
+      <module fileurl="file://$PROJECT_DIR$/IndicatorViewPager.iml" filepath="$PROJECT_DIR$/IndicatorViewPager.iml" />
       <module fileurl="file://$PROJECT_DIR$/indicatorviewpager/indicatorviewpager.iml" filepath="$PROJECT_DIR$/indicatorviewpager/indicatorviewpager.iml" />
       <module fileurl="file://$PROJECT_DIR$/sample_app/sample_app.iml" filepath="$PROJECT_DIR$/sample_app/sample_app.iml" />
     </modules>

@@ -19,11 +19,15 @@ public class SimpleImgViewPager extends ViewPager {
             @Override
             public void onPageSelected(int position) {
                 super.onPageSelected(position);
-                if (mPageIndicatorView != null) {
-                    mPageIndicatorView.setCurrPageNumber(position);
-                }
+                updatePageIndicatorView(position);
             }
         });
+    }
+
+    private void updatePageIndicatorView(int position) {
+        if (mPageIndicatorView != null) {
+            mPageIndicatorView.setCurrPageNumber(position);
+        }
     }
 
 
@@ -36,6 +40,12 @@ public class SimpleImgViewPager extends ViewPager {
     public void setAdapter(PagerAdapter adapter) {
         super.setAdapter(adapter);
         setPageIndicatorCnt();
+    }
+
+    @Override
+    public void setCurrentItem(int item) {
+        super.setCurrentItem(item);
+        updatePageIndicatorView(item);
     }
 
     private void setPageIndicatorCnt() {
