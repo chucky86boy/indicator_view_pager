@@ -7,7 +7,6 @@ import java.util.Arrays;
 
 import chonhyukwon.me.indicatorviewpager.PageIndicatorView;
 import chonhyukwon.me.indicatorviewpager.SimpleImgViewPager;
-import chonhyukwon.me.indicatorviewpager.SimpleImgViewPagerAdapter;
 
 public class MainActivity extends AppCompatActivity {
     public static final String[] DEMO_IMG_URLS = {
@@ -32,8 +31,8 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
         SimpleImgViewPager simpleViewPager = findViewById(R.id.mPager);
         PageIndicatorView pagerIndicator = findViewById(R.id.mPagerIndicatorView);
-        SimpleImgViewPagerAdapter adapter =
-                new SimpleImgViewPagerAdapter(getSupportFragmentManager());
+        ImgViewPagerAdapter adapter =
+                new ImgViewPagerAdapter(getSupportFragmentManager());
         simpleViewPager.setAdapter(adapter);
         adapter.addData(Arrays.asList(DEMO_IMG_URLS));
         simpleViewPager.setPageIndicatorView(pagerIndicator);

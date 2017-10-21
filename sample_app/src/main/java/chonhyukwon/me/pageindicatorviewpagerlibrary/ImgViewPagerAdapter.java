@@ -1,4 +1,4 @@
-package chonhyukwon.me.indicatorviewpager;
+package chonhyukwon.me.pageindicatorviewpagerlibrary;
 
 import android.support.v4.app.Fragment;
 import android.support.v4.app.FragmentManager;
@@ -8,16 +8,16 @@ import java.util.ArrayList;
 import java.util.List;
 
 @SuppressWarnings({"WeakerAccess", "SameParameterValue"})
-public class SimpleImgViewPagerAdapter extends FragmentStatePagerAdapter {
+public class ImgViewPagerAdapter extends FragmentStatePagerAdapter {
     final private List<String> mImgSrcArr = new ArrayList<>();
 
-    public SimpleImgViewPagerAdapter(FragmentManager fm) {
+    public ImgViewPagerAdapter(FragmentManager fm) {
         super(fm);
     }
 
     @Override
     public Fragment getItem(int position) {
-        return SimpleImgViewPagerFragment.instance(mImgSrcArr.get(position));
+        return ImgViewPagerFragment.instance(mImgSrcArr.get(position));
     }
 
     public void addData(List<String> data) {

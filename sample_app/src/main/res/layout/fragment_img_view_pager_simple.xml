@@ -5,5 +5,5 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:id="@+id/mImageView"
-    android:background="@android:color/holo_orange_dark"
+    android:background="@android:color/white"
     tools:ignore="ContentDescription" />

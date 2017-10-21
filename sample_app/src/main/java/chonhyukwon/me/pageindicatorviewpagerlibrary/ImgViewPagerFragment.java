@@ -1,4 +1,4 @@
-package chonhyukwon.me.indicatorviewpager;
+package chonhyukwon.me.pageindicatorviewpagerlibrary;
 
 import android.os.Bundle;
 import android.support.annotation.Nullable;
@@ -10,7 +10,7 @@ import android.widget.ImageView;
 
 import com.bumptech.glide.Glide;
 
-public class SimpleImgViewPagerFragment extends Fragment {
+public class ImgViewPagerFragment extends Fragment {
     private static final String KEY_ARG_IMG = " key_arg_img_uri";
 
     private ImageView mImageView;
@@ -18,7 +18,7 @@ public class SimpleImgViewPagerFragment extends Fragment {
     public static Fragment instance(String imgSrc) {
         Bundle args = new Bundle();
         args.putString(KEY_ARG_IMG, imgSrc);
-        Fragment frag = new SimpleImgViewPagerFragment();
+        Fragment frag = new ImgViewPagerFragment();
         frag.setArguments(args);
         return frag;
     }

@@ -1,1 +1,1 @@
-include ':app', ':indicatorviewpager'
+include ':sample_app', ':indicatorviewpager'
